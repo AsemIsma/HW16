@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div id="large" class="box">4</div>
+
+    <script>
+
+        let els = document.querySelectorAll('.box');
+
+        for (let i = 0; i < els.length; i++) {
+            els[i].style.margin = '0';
+            els[i].style.padding = '0';
+
+            els[i].style.height = '100px';
+            els[i].style.fontSize = '30px';
+            els[i].style.border = 'solid';
+            els[i].style.borderColor = 'rgb(54,52,52)';
+            els[i].style.backgroundColor = '#888';
+            els[i].style.borderWidth = '15px';
+            els[i].style.display = 'inline-block';
+            els[i].style.color = 'white';
+            els[i].style.width = '200px';
+            els[i].style.borderRadius = '15px';
+            els[i].style.textAlign = 'center';
+            els[i].style.paddingTop = '10%';
+            els[i].style.paddingBottom = '10px';
+        }
+
+        document.querySelector("#large").style.width = '665px';    </script>
+</body>
+</html>
